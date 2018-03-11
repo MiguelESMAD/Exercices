@@ -17,3 +17,10 @@ function HelloName() {
 
 
 }
+
+function AreaCal() {
+    let numbA = 5
+    let numbB = 7
+    let area = numbA*numbB
+    console.log(area)
+}
