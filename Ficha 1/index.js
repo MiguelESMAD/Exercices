@@ -61,3 +61,46 @@ function IMC_cal(){
 
 }
 
+function echo_SIM(){
+let echo = "ESMAD"
+let count = 0
+let times = prompt("please insert the number of times it wants to repeate in the echo")
+//Note when the user puts letters insted of a number, the counter will increse at a rapid number, slowing down the browser.
+// if using != in the do while conditions insted of <=
+ do{
+     console.log(echo)
+     count++
+ }while(count<=times)
+
+}
+function whole_NUMB(){
+    let numbA = prompt("insert the first number")
+    let numbB = prompt("insert the second number")
+    let countN = 0
+
+    if (numbA>numbB){
+        countN = numbB
+        console.log(countN)
+        while(countN<numbA){
+            countN++
+            console.log(countN)
+        }
+        
+    }
+    else if(numbB>numbA){
+       
+        countN= numbA
+        console.log(countN)
+        while(countN<numbB){
+            countN++
+            console.log(countN)
+        }
+      
+    }
+    else if(numbA=numbB){
+        console.log(numbA)
+        
+    }
+
+}
+
