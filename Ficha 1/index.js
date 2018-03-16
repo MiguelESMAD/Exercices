@@ -104,3 +104,17 @@ function whole_NUMB(){
 
 }
 
+function multi_TABLE(){
+    let numbM = prompt("please incert the number you wish to see the multiplication table")
+    for(let i=0; i < 11; i++){
+        console.log(numbM*i)
+    }
+
+}
+
+function multi_CALC(){
+    let numbA = prompt("insert the first number")
+    let numbB = prompt("insert the second number")
+    
+}
+
