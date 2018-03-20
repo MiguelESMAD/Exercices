@@ -150,3 +150,8 @@ function multi3_CALC(){
     
 }
 
+function numb_prim(){
+    let numbA =prompt("insert a number to verefy if its prime or not")
+    
+}
+
