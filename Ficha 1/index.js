@@ -112,9 +112,41 @@ function multi_TABLE(){
 
 }
 
-function multi_CALC(){
+function multi3_CALC(){
     let numbA = prompt("insert the first number")
     let numbB = prompt("insert the second number")
+    let total = 0
+
+    if (numbA>numbB){
+        for (let i = numbB; i < numbA+1; i++ ){
+            if( i%3 == 0){
+                total = total + i
+
+            }
+        }
+
+        console.log(total)
+    }
+
+    if (numbA<numbB){
+        for (let i = numbA; i < numbB+1; i++ ){
+            if( i%3 == 0){
+                total = total + i
+
+            }
+        }
+
+        console.log(total)
+    }
+
+    if (numbA=numbB){
+        if(numbA%3==0){
+            total = numbA
+        }
+    }
+
+    
+
     
 }
 
