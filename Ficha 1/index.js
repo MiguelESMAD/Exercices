@@ -152,6 +152,19 @@ function multi3_CALC(){
 
 function numb_prim(){
     let numbA =prompt("insert a number to verefy if its prime or not")
-    
+    if(numbA<2){
+        console.log("not a prime number")
+    }
+
+    else{
+        for ( let i =2; i <numbA; i++){
+            if(numbA%i==0){
+                console.log("it is a prime number")
+            }
+        }
+        
+    }
+
+
 }
 
