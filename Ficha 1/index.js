@@ -182,3 +182,83 @@ function numb_factorial(){
    
 }
 
+function numb_perfect(){
+
+    let x = prompt("insert the number to check if its perfect")
+    let numb = parseInt(x)
+
+    var temp = 0;
+   for(var i=1;i<=numb/2;i++)
+     {
+         if(numb%i === 0)
+          {
+            temp += i;
+          }
+     }
+   
+    if(temp === numb && temp !== 0)
+        {
+       console.log("It is a perfect number.");
+        } 
+     else
+        {
+       console.log("It is not a perfect number.");
+        }   
+  
+}
+
+
+function leap_year(){
+    let x = prompt("insert the year to check if its a leap year")
+    let year = parseInt(x)
+
+    if(year%4 === 0){
+        if(year%100 === 0){
+            if(year%400 === 0){
+                console.log("its a leap year")
+            }
+
+            else{
+                console.log("not a leap year")
+            }
+
+        }
+
+        else{
+            console.log("its a leap year ")
+        }
+    }
+
+    else{
+        console.log("not a leap year")
+    }
+
+}
+
+function capi_kua(){
+    let x = prompt("insert the number from 100 to 999")
+    if(x>=100 && x<=999){
+        let str = x.toString()
+        firstStr= str.charAt(0)
+        revStr= str.charAt(2)
+        
+        if(firstStr==revStr){
+            console.log("its a capikua")
+        }
+        else{
+            console.log("its not a capikua")
+        }
+    }
+    
+    else{
+        console.log("invalid number, insert again")
+    }
+}
+
+function guess_game(){
+    let rng = Math.floor((Math.random()*100)+1);
+    let count = 0
+
+    while()
+}
+
