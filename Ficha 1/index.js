@@ -161,3 +161,24 @@ function numb_prim(){
 
 }
 
+function numb_factorial(){
+    let numbA = prompt("insert the number plz")
+    let newA = parseInt(numbA)
+    total=1
+    if(newA==0){
+        console.log(0)
+    }
+    if(newA == 1){
+        console.log(1)
+    }
+    if(newA >1){
+        newA += 1
+        for(let i = 1; i < newA; i++){
+            total*= i
+        }
+        console.log(total)
+
+    }
+   
+}
+
