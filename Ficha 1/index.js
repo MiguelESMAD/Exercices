@@ -118,53 +118,42 @@ function multi3_CALC(){
     let total = 0
 
     if (numbA>numbB){
-        for (let i = numbB; i < numbA+1; i++ ){
-            if( i%3 == 0){
-                total = total + i
+        for (let i = numbB; i < numbA; i++ ){
+            let reminder = i%3
+            if( reminder == 0){
+                total = +i
 
             }
         }
 
         console.log(total)
-    }
-
-    if (numbA<numbB){
-        for (let i = numbA; i < numbB+1; i++ ){
-            if( i%3 == 0){
-                total = total + i
-
-            }
-        }
-
-        console.log(total)
-    }
-
-    if (numbA=numbB){
-        if(numbA%3==0){
-            total = numbA
-        }
-    }
-
-    
-
-    
+    }  
 }
 
 function numb_prim(){
     let numbA =prompt("insert a number to verefy if its prime or not")
-    if(numbA<2){
+    if(numbA==1){
         console.log("not a prime number")
     }
 
-    else{
-        for ( let i =2; i <numbA; i++){
-            if(numbA%i==0){
-                console.log("it is a prime number")
+    else if (numbA==2){
+        console.log("its a prime number ")
+    }
+
+    else {
+        for (let i=2; i < numbA; i++){
+            if(numbA%i == 0){
+                console.log("its not a prime number")
+                break
+            }
+
+            if(i+1 == numbA){
+                console.log("its a prime number ")
+                break
             }
         }
         
     }
-
 
 }
 
