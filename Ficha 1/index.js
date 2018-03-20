@@ -113,21 +113,25 @@ function multi_TABLE(){
 }
 
 function multi3_CALC(){
-    let numbA = prompt("insert the first number")
-    let numbB = prompt("insert the second number")
+    let numbA = prompt("insert the biggest number") 
+    let numbb = prompt("insert the lowerst numver")
+    //so for some odd reason when you do a second prompedt it wont regognise the seond number has a number but something else so
+    //make sure to convert it to an intergral 
+    let lown = parseInt(numbb)
+    numbA+=1
     let total = 0
-
-    if (numbA>numbB){
-        for (let i = numbB; i < numbA; i++ ){
-            let reminder = i%3
-            if( reminder == 0){
-                total = +i
-
-            }
+    for(let i= lown; i < numbA; i++){
+        if(i % 3 === 0){
+            total += i
         }
+        
+    }
 
-        console.log(total)
-    }  
+    console.log(total)
+   
+    
+    
+     
 }
 
 function numb_prim(){
