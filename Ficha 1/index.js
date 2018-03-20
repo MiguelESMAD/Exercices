@@ -256,9 +256,44 @@ function capi_kua(){
 }
 
 function guess_game(){
-    let rng = Math.floor((Math.random()*100)+1);
+    let rng = Math.floor((Math.random()*50)+1);
     let count = 0
 
-    while()
-}
+    let first = prompt("insert the first number")
+    let fitry = parseInt(first)
 
+    if(rng!=fitry){
+        count++
+        while(count<=5){
+            if (fitry < rng){
+                first = prompt("try highter")
+                fitry = parseInt(first)
+                count++
+
+            }
+
+            else if(fitry > rng){
+                first = prompt("try lower")
+                fitry = parseInt(first)
+                count++
+            }
+            else{
+                console.log("you guessed it! and only took:" + count)
+
+            }
+
+            
+        }
+
+        if (count>=5){
+            console.log("your out of tries , you lose ")
+        }
+        
+    }
+
+    else{
+        console.log("wow! you gessed it in your first try! congrats!")
+    }
+
+   
+}
