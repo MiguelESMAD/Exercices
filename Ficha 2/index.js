@@ -1,4 +1,15 @@
+//-------------------------
+// solution help here: https://github.com/rqueiros/MyRep
 
+
+let show = function(value) {
+    let myTextArea = document.querySelector("#txtResults")
+myTextArea.innerHTML += value + "\n"
+
+
+
+
+///---------------
 let arNUmb = [7, 3, 6, 12, 5];
 let arStr = ["Vermelho", "Verde", "Branco", "Preto"];
 
