@@ -65,3 +65,39 @@ function number_remove(){
 }
 
 
+//this next one i got confused on what was asking, but turns out its just make a new string whit the numbers of the arNumb
+function number_string(){
+
+    let newStr = ""
+    let numbl = arNUmb.length
+
+    for(let i = 0; i <numbl; i++) {
+        newStr += arNUmb[i]
+    }
+    console.log(newStr)
+    show("D-> " + newStr)
+}
+
+function string_ordered(){
+    let colors = arStr.sort()
+    show("E-> " + colors)
+
+}
+
+function string_unsorted(){
+    let colors = arStr.sort().reverse()
+    show("F-> " + colors)
+}
+
+function string_biggest(){
+    let strl = arStr.length //number of elements on the array
+    let biggest = arStr[1]
+
+    for(let i=0; i<strl; i++){
+        if(biggest.length<arStr[i].length){
+            biggest= arStr[i]
+        }
+    }
+
+    show("G-> " + biggest)
+}
