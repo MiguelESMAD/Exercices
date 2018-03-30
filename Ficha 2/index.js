@@ -129,3 +129,67 @@ function string_password(){
 
     
 }
+
+function number_position(){
+    let pos = 4
+    let result = arNUmb[pos]
+    show("J->"+ result)
+}
+
+function number_until(){
+    let until = 9
+    let numbl = arNUmb.length
+    let newar = []
+
+    for(let i = 0; i<numbl; i++){
+        if(arNUmb[i]<9){
+            newar.push(arNUmb[i])
+        }
+    }
+    newar.sort()
+
+    show("K->" + newar)
+
+
+}
+
+function number_pares(){
+    let numbl = arNUmb.length
+    let newar = []
+    for(let i=0; i<numbl; i++){
+        if(arNUmb[i]==0 || arNUmb[i]%2==0){
+            newar.push(arNUmb[i])
+
+        }
+    }
+
+    show("L->" + newar)
+}
+
+function number_plusone(){
+    let numbl = arNUmb.length
+    
+    for(let i=0; i<numbl;i++){
+        arNUmb[i]+= 1
+    }
+    show("M-> " + arNUmb)
+
+}
+
+function number_adiray(){
+    let array1 = [1,0,2,3,4];
+    let array2 = [3,5,6,7,8,13];
+    let adiray = []
+    let longest = array2.length  // SECOND array has the longest lenght, so the 6th number of the first array wil be undefined.
+    //so one of the solutions for that is to put an IF condition where the undefined on that element will = to zero, 
+    //or incress the number of elements by using .push(0) element so it can have the same lenght has the other array
+
+    for(let i=0; i<longest;i++){
+        if(array1[i]== undefined){
+            array1[i]= 0
+        }
+        adiray.push(array1[i]+array2[i])
+    }
+
+    show("N-> "+ adiray)
+}
