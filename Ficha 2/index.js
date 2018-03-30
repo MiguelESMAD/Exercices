@@ -90,7 +90,7 @@ function string_unsorted(){
 }
 
 function string_biggest(){
-    let strl = arStr.length //number of elements on the array
+    let strl = arStr.length 
     let biggest = arStr[1]
 
     for(let i=0; i<strl; i++){
@@ -100,4 +100,32 @@ function string_biggest(){
     }
 
     show("G-> " + biggest)
+}
+
+function string_orange(){
+    let colorPick = prompt("pick a color(make sure the first leter is in capital letters)")
+    let strl = arStr.length
+    let count= 0
+
+    for(let i=0; i<strl; i++){
+        if(colorPick == arStr[i]){
+            count++
+        }
+    }
+
+    show("H-> "+ count)
+
+
+}
+
+function string_password(){
+    let passNcon = ["javarules","javarules"]
+    let result=0
+    if(passNcon[0]==passNcon[1]){
+        result=1
+    }
+
+    show("I-> "+ count)
+
+    
 }
