@@ -54,6 +54,8 @@ function numb_words(){
     let Dialog_Prime = "A sanguine trick.\n A murderous comedy.\n But no one is laughing anymore... except you.\n The mere vapors of your life, shimmering still. Mirage."
     let str_numb = Dialog_Prime.split(" ").length
 
+    //the escape caracter is "\n ", dont forget the '' after the 'n' 
+
     console.log (Dialog_Prime)
     console.log(str_numb)
     
