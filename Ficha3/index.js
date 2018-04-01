@@ -62,3 +62,72 @@ function numb_words(){
     show("D-> " + str_numb)
 
 }
+
+function string_rever(){
+    // first create our desied string and an emphty array
+    let text = "I heared that the next frame to be primed is Limbo, but Mesa is also a good candidate. "
+    let arstr = []
+
+
+    //afterwards, you will need to put the strig on the away and equal and split every character ""
+    //after that is complete you will reverse it using the reverse() method
+    arstr = text.split("");
+    arstr.reverse();
+
+    //console.logs are usefull to have arround to check if each part is performing well and see on the console if its going has you plan
+
+    console.log(arstr)
+    console.log(typeof arstr)
+
+    // after and finally you will use join() to turn the array in to a string, inside the join() method, is the seperator , 
+    // if you have a list of items on the aray and you want to put "and" in between items you add that on the join()
+    // by default, an emphty join() will put comas ',' 
+    // sence in this case the array is just caracters you but '' 
+    text= arstr.join('');
+
+    console.log(text)
+    console.log(typeof text)
+
+    show("E-> " + text)
+}
+
+function char_remove(){
+    let text = "Warframe in recEent years has only been growing bigger, and next tEnnoCon will be massive then other years."
+    let charSEt1 = 'e' 
+    let charSEt2 = 'E'
+    
+    /*Method 1, you can split a specific char, or string, but it will split and leave a coma behind, so in order to avoid that
+    .join('') will substatute the coma for a blank
+    NOte: so for seperate characters you will need to do multiple splits and joins
+    */
+
+    let textN = text.split(charSEt1).join('').split(charSEt2).join('')
+
+    /*Method 2:
+    THis methind might be more simple and efficient.
+    so this is simular to exercice C, we used regexp, but whit /string/gi , insted we are doing another way,
+    where we can add the var , this will be good for exercices were the user needs to type in the the thing they desire to 
+    remove or search or count.
+
+    let textN = text.replace(RegExp(charSEt,'gi'), '')
+
+    */
+    show("F-> "+ textN)
+}
+
+function time_convert(){
+    let timeSec = prompt("Insert the amount of seconds you wish to convert")
+    if(timeSec === null){
+        timeSec = 0
+    }
+
+    //NOte: when a user leaves a prompt empty, the result will be "null", so in order to avoid null showing up, make sure to put an if condition.
+
+    // Note :floor. will turn a number inside into a round variable, say 1.6 will be 1 
+    let hours = Math.floor(timeSec / 3600);
+    let minutes = Math.floor(timeSec % 3600 / 60)
+    let seconds = Math.floor(timeSec % 3600 % 60)
+
+    let result = timeSec+' = '+ hours + 'h : ' + minutes + 'm : ' + seconds +'s'
+    show("G-> " + result)
+}
