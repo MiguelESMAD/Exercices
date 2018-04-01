@@ -131,3 +131,39 @@ function time_convert(){
     let result = timeSec+' = '+ hours + 'h : ' + minutes + 'm : ' + seconds +'s'
     show("G-> " + result)
 }
+
+function ceasar_shift(){
+    //let msg =prompt("insert the message you wish to encrypt (leeters only please)")
+
+    //base alphabet array
+    let albase= "abcdefghijklmnopqrstuvwxyz"
+    let array1 = []
+    array1 = albase.split("")
+    
+    console.log(array1)
+
+
+    //shift alphabet array
+    let alshift ="defghijklmnopqrstuvwxyzabc"
+    let array2 =[]
+    array2= alshift.split("")
+
+    console.log(array2)
+
+    //encryption code starts here
+
+    let msgTest = "i ate a cookie"
+    let msgAr1 =[]
+    msgAr1=msgTest.split("")
+
+    let msgAr2 = []
+
+    for(let i =0;i < msgAr1.length; i++){
+        
+
+    }
+
+    console.log(result)
+
+    
+}
