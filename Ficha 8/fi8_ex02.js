@@ -86,7 +86,7 @@ frmGame.addEventListener("submit",function(event){
 
 //3- add the object to the array
 
-//4-render in to the table
+//4-render in to the table2
 
 }
-}
+
