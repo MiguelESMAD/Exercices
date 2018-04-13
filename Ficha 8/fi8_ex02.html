@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Ficha 08 - Exercicio 02</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+
+<!--Font Awesome -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
+    <!-- Custom JS-->
+    <script src="fi8_ex02.js"></script>
+
+    </head>
+  <body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-3">Game Library</h1>
+            <p class="lead">Allows you to organize your list of games</p>
+            <hr class="my-2">
+            <p>Add all the info asked so you can add your games to the table</p>
+
+            <!--Form stucture here-->
+            <form id="gameForm">
+                <div class="form-row">
+                    
+                    <div class="form-group col-md-6">
+                        <label for="inputTitle">Title</label>
+                        <input type="text" value="Tetris"  id="inputTitle" class="form-control" required>
+                        </div>
+
+                        <div class="form-group col-md-2">
+                             <label for="inputGenres">Genres</label>
+                             <select class="form-control" name="" id="inputGenres" required>
+                                 <option value="Action">Action</option>
+                                 <option value="Puzzle">Puzzle</option>
+                                 <option value="Sports">Sports</option>
+                                 <option value="Souls Kind">Souls Kind</option>
+                                 </select>
+                                 </div>
+
+                </div>
+                <div class="form-row">
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label mr-4">
+                            <input class="form-check-input" type="checkbox" name="" id="" value="Steam"> Steam
+                        </label>
+                        <label class="form-check-label mr-4">
+                            <input class="form-check-input" type="checkbox" name="" id="" value="PS4"> PS4
+                        </label>
+                        <label class="form-check-label mr-4">
+                            <input class="form-check-input" type="checkbox" name="" id="" value="Xbox1"> Xbox1
+                        </label>
+                        <label class="form-check-label mr-4">
+                            <input class="form-check-input" type="checkbox" name="" id="" value="3DS"> 3DS
+                        </label>
+                        <label class="form-check-label mr-4">
+                            <input class="form-check-input" type="checkbox" name="" id="" value="Switch"> Switch
+                        </label>
+                        <label class="form-check-label mr-4">
+                            <input class="form-check-input" type="checkbox" name="" id="" value="Mobile"> Mobile
+                        </label>
+                    </div>
+                </div>
+                <br>
+
+                <div class="form-group col-md-6">
+                        <label for="inputCover">Game Cover</label>
+                        <input type="url" value="http://sdsd.sdsd.pt" class="form-control" id="inputPhoto" required>
+                        </div>
+
+                <!--Buttons-->
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <button type="submit" class="btn btn-primary mb-2">Add Game</button>
+                        <button type="reset" class="btn btn-primary mb-2">Clear values</button>
+                        <button type="button" class="btn btn-primary mb-2">Filter</button>
+                        <button type="button" class="btn btn-primary mb-2">Remove All</button>  
+                    </div>
+                    </div>
+
+
+
+                 
+                
+            </form>
+        </div>
+    </div>
+
+
+                <!-- Table -->
+        <table id="tblGames" class="table table-sm">            
+        </table>
+
+       </div>
+</div>
+
+
+
+
+
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
