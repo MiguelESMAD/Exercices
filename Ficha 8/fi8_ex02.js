@@ -1,5 +1,6 @@
 //define the class for the Games and the array
 let games =[]
+let gameId = 0
 
 class Game{
 
@@ -14,10 +15,12 @@ class Game{
 
 
     //set upts of the properties
-//property of the id ( i have no clue what id does =/)
-get(id){
-    return this._id
-}
+
+    //property of the id
+
+    get id(){
+        return this._id
+    }
 
     //property tittle
 
@@ -57,12 +60,13 @@ get(id){
         this._cover= newcover
     }
 
-    //getting the last id
+    //getting the last id (static method of Game)(trough the list of games recorded on the array, we are getting the last id of the last game)
     static getLastId(){
         let lastId =0
         if (games.length > 0) {
             lastId = games[games.length-1].id
         }
+        return lastId
     }
 
 }
@@ -72,23 +76,36 @@ window.onload = startUP()
 
 function startUP(){
 
-//add a lister to the form
+// object form
 let frmGame = document.getElementById("gameForm")
-frmGame.addEventListener("submit",function(event){
+
 
     // 1-get the values from the submited form for the game
     let title = document.getElementById("inputTittle").value
     let genres = document.getElementById("inputGenres").value
     let cover = document.getElementById("inputCover").value
 
+    //1.2-modalparts
+    
+    //1.3-table parts and buttons
+    let tblgame = document
 
-    //2-create a new object based on those submited values
-    let newgame = new Game()
 
+   // add a listern to the forim so you it can chekc and validate the form (theres alot missing )
+   frmGame.addEventListener("submit",function(event){})}
+   
 
-    //3- add the object to the array
+   // add listener to RemoveAll button
+   btnRemoveAll.addEventListener("click",function(){
+       games = []
+       renderTable()
+       tblGames.innerHtml =""
+   })
 
-    //4-render in to the table2
+   //add listener to Filter button
+   btnFilter.addEventListener("click",function(){
+       let genre = document.getElementById("inputGenres").value
+       renderTable()
+   })
 
-})
-}
+   //funtion to render the game objects in to the table
