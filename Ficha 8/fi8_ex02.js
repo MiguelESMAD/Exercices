@@ -82,11 +82,13 @@ frmGame.addEventListener("submit",function(event){
     let cover = document.getElementById("inputCover").value
 
 
-//2-create a new object based on those submited values
+    //2-create a new object based on those submited values
+    let newgame = new Game()
 
-//3- add the object to the array
 
-//4-render in to the table2
+    //3- add the object to the array
 
+    //4-render in to the table2
+
+})
 }
-
