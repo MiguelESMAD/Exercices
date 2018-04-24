@@ -68,3 +68,35 @@ window.onclick = function(event) {
 }
 
 
+
+
+
+// Funtion that will insert data to the catalog
+
+function renderCatalog(){
+
+    //1. insert the data of the trips' array
+
+    //2 each stip will have its on card and will will compose the html data in to them trhou8gh cicles (using a "for" cicle method)
+    // make sure to do a card base on the html so you can copy and paste here
+    let strHtmlCard =""
+    for(var i = 0; i< trips.lenght; i++){
+        //this will make sure it has a max of 3 cards in each line
+        //this will create a line
+        if( i % 3== 0){
+            strHtmlCard += '<div class="row">'
+        }
+
+
+
+
+        //close the lines
+        if( i % 3== 2){
+            strHtmlCard += '</div>'
+        }
+    }
+
+
+}
+
+
