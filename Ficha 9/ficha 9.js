@@ -26,7 +26,7 @@ class Trip{
 // after start setting the properties of each part of the class whit "get" and "set"
 
 //this missing how to make the code for getting the getlastID
-static getLastID() {
+static function getLastID() {
 
     let lastID = 0
 
