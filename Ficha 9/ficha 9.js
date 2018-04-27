@@ -8,7 +8,11 @@
 // CLASS: USERS
 //######################################################################################
 let users =[]
-class User{}
+let userID= 0
+//there are missing parts
+class User{
+    constructor(name, email)
+}
 //################################################################################
 // CLASS: TRIP
 //####################################################################################################
@@ -38,11 +42,18 @@ window.onload = function(){
 //Html references elements
 
 //Inject users and trip via code (baiscly pre made users for testing)(dont forget to set "push" for each trip and user set up )
+// for a client all this needs to be set on comments or deleted for the client 
 let user01 = new User()
 let user02 = new User()
 users.push(user01); user.push(user02)
 
 let newtrip01 = new Trip()
+trip.push(newtrip01)
+
+renderAuthers()
+renderCountries()
+renderCatalog()
+
 
 
 // Hide the Autentication options
